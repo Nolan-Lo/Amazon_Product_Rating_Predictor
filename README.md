@@ -17,7 +17,7 @@ This project leverages Amazon product reviews and item metadata to predict custo
 
 
 ### Link to Jupyter Notebook
-
+[Click here to see notebook](https://github.com/Nolan-Lo/Amazon_Product_Rating_Predictor/blob/main/Notebook/Amazon_Reviews.ipynb)
 
 ### Setup
 ```bash
