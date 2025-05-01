@@ -18,3 +18,9 @@ This project leverages Amazon product reviews and item metadata to predict custo
 
 ### Link to Jupyter Notebook
 
+
+### Setup
+```bash
+pip install -r requirements.txt
+# or see top of `exploration_spark.ipynb` for !pip commands
+
