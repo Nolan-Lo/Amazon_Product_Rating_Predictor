@@ -13,7 +13,14 @@ This project leverages Amazon product reviews and item metadata to predict custo
 
 2. **Metadata**  
    - Impute missing `price` with median or remove all instances if there is a small amount. 
-   - One-hot encode `main_category` & `verified_purchase` with `StringIndexer` + `OneHotEncoder`  
+   - One-hot encode `main_category` & `verified_purchase` & 'helpful_vote' with `StringIndexer` + `OneHotEncoder`
+
+3. **Handle Class Imbalance**
+   - Undersample majority class(5 star rating) & oversample minority class(1, 2, 3, 4 star rating).
+
+4. **Avoid Data Leakage**
+   - When creating train/val/test split make sure that the split is in chronological order.
+   - 
 
 
 ### Link to Jupyter Notebook
