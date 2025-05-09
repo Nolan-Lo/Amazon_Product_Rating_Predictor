@@ -32,7 +32,7 @@ This project leverages Amazon product reviews and item metadata to predict custo
    - When creating train/val/test split make sure that the split is in chronological order
 
 ### Link to Jupyter Notebook
-[Click here to see notebook](https://github.com/Nolan-Lo/Amazon_Product_Rating_Predictor/blob/main/Notebook/Amazon_Reviews.ipynb)
+[Click here to see notebook](https://github.com/Nolan-Lo/Amazon_Product_Rating_Predictor/blob/main/Notebook/Amazon_Reviews_Final.ipynb)
 
 ### Setup
 ```bash
