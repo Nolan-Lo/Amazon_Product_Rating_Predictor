@@ -7,18 +7,28 @@ This project leverages Amazon product reviews and item metadata to predict custo
 
 ### Data Preprocessing
 
-1. **Review Text**  
+1. **Loading Data**
+   -  Load .parquet files from a directory, with each file representing a different product category. 
+   -  A category column is added to keep track of the source.
+  
+2. **Combining Datasets**
+   -  All the individual category files are merged into a single Spark DataFrame using unionByName, ensuring columns are aligned.
+  
+3. **Handling Missing Data**
+   - Check each column for missing values, including special handling for numeric fields that may contain NaNs.
+     
+4. **Review Text**  
    - Use Spark ML’s `RegexTokenizer` -> `StopWordsRemover` -> `CountVectorizer` or `TFIDF`  
    - Handle missing text via empty string
 
-2. **Metadata**  
+5. **Metadata**  
    - Impute missing `price` with median or remove all instances if there is a small amount. 
    - One-hot encode `main_category` & `verified_purchase` & `helpful_vote` with `StringIndexer` + `OneHotEncoder`
 
-3. **Handle Class Imbalance**
+6. **Handle Class Imbalance**
    - Undersample majority class(5 star rating) & oversample minority class(1, 2, 3, 4 star rating)
 
-4. **Avoid Data Leakage**
+7. **Avoid Data Leakage**
    - When creating train/val/test split make sure that the split is in chronological order
 
 ### Link to Jupyter Notebook
