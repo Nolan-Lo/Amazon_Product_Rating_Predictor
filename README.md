@@ -10,7 +10,7 @@ Initially our intention was to attempt a prediction based on a linear regression
 Our Random Forest model fits well within the ideal zone of the fitting graph. The training and test accuracies are nearly identical (65.6%), indicating that the model is neither underfitting nor overfitting. It generalizes well to unseen data and falls near the optimal point on the bias-variance curve.
 
 ### 4.  Model Fit and Next Model Steps
-Random Forest model runs using 1%, 5%, and 10% of the dataset produce similar results, yielding ~65% accuracy using 80% of each subset as train data and 20% as the test data.
+Random Forest model runs using 1%, 5%, and 10% of the dataset produce similar results, yielding ~65% accuracy using 80% of each subset as train data and 20% as the test data.  Additionally we want to consider improvements on the linear regression model, if possible.  Additionally, we believe a logistic regression model could perform well.  However, due to the size of the dataset and the length of the text reviews, proper scalable solutions must be tested to succeed in this model type.  Vectorizing millions of review sentences requires thoughtful implementation.
 
 ### 5.  Milestone 3 Notebook
 [Click here to see notebook](Notebook/Amazon_Reviews_3.1.ipynb)
