@@ -13,7 +13,7 @@ Our Random Forest model fits well within the ideal zone of the fitting graph. Th
 Random Forest model runs using 1%, 5%, and 10% of the dataset produce similar results, yielding ~65% accuracy using 80% of each subset as train data and 20% as the test data.
 
 ### 5.  Milestone 3 Notebook
-[Click here to see notebook](https://github.com/Nolan-Lo/Amazon_Product_Rating_Predictor/blob/main/Notebook/Amazon_Reviews_Final.ipynb)
+[Click here to see notebook](Notebook/Amazon_Reviews_3.1.ipynb)
 
 ### 6.  Conclusion
 To address the question, "What is the conclusion of your first model? What can be done to possibly improve it?": Our first model, linear regression with rounded predictions, performed poorly because it was not designed for categorical outcomes. To improve upon that initial approach, we would need to move away from regression entirely and adopt classification methods that align better with the nature of the data. This is precisely what led us to explore Random Forests and other classifiers. At this point, we’re focused on tuning the Random Forest model further — adjusting parameters such as the number of trees, maximum depth, and feature subsets — to optimize performance and reduce variance without overfitting.
