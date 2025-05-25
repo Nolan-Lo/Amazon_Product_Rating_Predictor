@@ -4,7 +4,7 @@
 The dataset we chose for our analysis was well cleaned and highly processed.  However, given the size of the entire dataset, which includes ~300 million review observations, the training dataset is partitioned before model runs to leverage parallel processing.  Given the limitations and computational cost needed to train on the entire dataset, we sub-sampled our dataset to begin the model testing process.
 
 ### 2.  First Model Train
-Initially our intention was to attempt a prediction based on a linear regression model (generating predictions bewteen 0 and 5), but we found better results using a random forest model and decided to develop that model further.
+Initially our intention was to attempt a prediction based on a linear regression model (generating predictions bewteen 0 and 5), but we found better results using a random forest model and decided to develop that model further.  We will continue to test different hyperparameter selections, as well as further processing of the dataset to highlight features that have stronger impact on accurate classification.
 
 ### 3.  Model Evaluation
 Our Random Forest model fits well within the ideal zone of the fitting graph. The training and test accuracies are nearly identical (65.6%), indicating that the model is neither underfitting nor overfitting. It generalizes well to unseen data and falls near the optimal point on the bias-variance curve.
