@@ -1,19 +1,22 @@
 # Amazon Product Rating Predictor
 ### 1.  Finish Major Preprocessing
 
-The dataset we chose for our analysis was well cleaned and highly processed.  However, given the size of the entire dataset, which includes ~300 million review observations, training dataset is partitioned before model runs to leverage parallel processing.  Given the limitations and computational cost needed to train on the entire dataset, we sub-sampled our dataset to begin our model testing process.
+The dataset we chose for our analysis was well cleaned and highly processed.  However, given the size of the entire dataset, which includes ~300 million review observations, the training dataset is partitioned before model runs to leverage parallel processing.  Given the limitations and computational cost needed to train on the entire dataset, we sub-sampled our dataset to begin the model testing process.
 
 ### 2.  First Model Train
-Our primary model was built based on a random forest model design. 
+Initially our intention was to attempt a prediction based on a linear regression model (generating predictions bewteen 0 and 5), but we found better results using a random forest model and decided to develop that model further.
 
 ### 3.  Model Evaluation
+Our Random Forest model fits well within the ideal zone of the fitting graph. The training and test accuracies are nearly identical (65.6%), indicating that the model is neither underfitting nor overfitting. It generalizes well to unseen data and falls near the optimal point on the bias-variance curve.
+
 ### 4.  Model Fit and Next Model Steps
+Random Forest model runs using 1%, 5%, and 10% of the dataset produce similar results, yielding ~65% accuracy using 80% of each subset as train data and 20% as the test data.
 
 ### 5.  Milestone 3 Notebook
 [Click here to see notebook](https://github.com/Nolan-Lo/Amazon_Product_Rating_Predictor/blob/main/Notebook/Amazon_Reviews_Final.ipynb)
 
 ### 6.  Conclusion
-
+To address the question, "What is the conclusion of your first model? What can be done to possibly improve it?": Our first model, linear regression with rounded predictions, performed poorly because it was not designed for categorical outcomes. To improve upon that initial approach, we would need to move away from regression entirely and adopt classification methods that align better with the nature of the data. This is precisely what led us to explore Random Forests and other classifiers. At this point, we’re focused on tuning the Random Forest model further — adjusting parameters such as the number of trees, maximum depth, and feature subsets — to optimize performance and reduce variance without overfitting.
 
 ### Setup
 ```bash
