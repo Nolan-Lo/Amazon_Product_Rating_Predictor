@@ -6,4 +6,4 @@
 
 ### Null count
 
-<img src="images/nulls_by_col.png" width="500">
+<img src="images/nulls_by_col.png" alt="Nulls by columns" width="500">
