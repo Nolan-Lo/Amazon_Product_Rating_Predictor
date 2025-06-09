@@ -49,7 +49,13 @@ Given the massive size of the dataset and performance constraints, we implemente
 
 ### 3. Model 1 – Linear Regression
 
-We began with a **linear regression model** as a baseline due to its simplicity and interpretability. However, performance was limited:
+We began with a **linear regression model** as a baseline.
+
+#### Motivation:
+  - **Computationally cheap**, allowing for quick tuning of parameters
+  - Simple and easy to interpret
+
+However it did not perform as well as we hoped. 
 
 - **Reasons for poor performance**:
   - Assumes linearity, which doesn't capture complex interactions.
@@ -98,7 +104,7 @@ The notebook containing all of the models can be found [here.](https://github.co
 We first tried to train on the full ~300 million-record dataset but ran into memory errors and prohibitively long runtimes, even with a 20 percent subset. To address this, we sampled 1%(3 million), 5% (15 million), and 10% (30 million) of the data. The random forest achieved 65.64% accuracy on 1% data, 65.58% on 5% data, and 65.59% on 10% data. Training and test accuracies converged around 65.6 %, showing the model was neither underfitting nor overfitting. This consistency indicates that, beyond a modest subsample, simply adding more data did not improve performance under our current feature set.
 
 ### 2. Reflecting on the Regression-Based Model
-We began with linear regression because of its simplicity and interpretability, rounding continuous outputs to discrete star ratings. It achieved 52.33% test accuracy, which fell short of expectations. We also tried logistic regression and XGBoost on the same features, but saw no significant gains. Treating ratings as continuous ignored their categorical nature, so we shifted our focus to classification methods.
+We began with linear regression because of its simplicity and interpretability, rounding continuous outputs to discrete star ratings. We undersampled the 5.0 star rating as they accounted for almost half of the entire dataset. We began with traditional rounding, which had a low accuracy of around 30%. We then decided to tune our rounding parameters, transitioning to custom bins. This achieved 52.33% test accuracy, while a vast improvement, ultimately fell short of expectations. We also tried logistic regression and XGBoost on the same features, but saw no significant gains. Treating ratings as continuous ignored their categorical nature, so we shifted our focus to classification methods.
 
 ### 3. Interpreting the Random Forest Results
 We chose a random forest classifier to handle high-dimensional, sparse features without extensive preprocessing. It scored about 65.6% accuracy across all sample sizes, with training and test accuracies closely matched. These results seem plausible for natural language data, yet the mid-sixties plateau suggests our features capture only surface-level signals.
