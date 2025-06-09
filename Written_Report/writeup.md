@@ -10,7 +10,7 @@ We agreed that the ability to predict online customer reviews would yield signif
 
 We believed the impressive quality and size of the dataset would give us a strong foundation to train our model.  
 
-In addition to the dataset of amazon customer reviews, a corresponding dataset of product metadata was available.  This would enable further analysis into the feature significance and trends we could discover during our model development process.
+In addition to the dataset of amazon customer reviews, a corresponding dataset of product metadata was available.  This would enable further analysis into the feature significance and trends we identify during model development.
 
 
 ## Methods and Results
