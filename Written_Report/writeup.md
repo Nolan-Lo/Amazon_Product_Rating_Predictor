@@ -89,4 +89,4 @@ We conducted several trials to assess the effect of sample size and model parame
 These parameters were chosen to reduce runtime. Accuracy remained relatively stable when increasing these values, while runtime increased noticeably.
 
 ### Link to notebook
-The notebook containing all of the models can be found [here](https://github.com/Nolan-Lo/Amazon_Product_Rating_Predictor/blob/Milestone4/Notebook/Amazon_Reviews_M4.ipynb)
+The notebook containing all of the models can be found [here.](https://github.com/Nolan-Lo/Amazon_Product_Rating_Predictor/blob/Milestone4/Notebook/Amazon_Reviews_M4.ipynb)
