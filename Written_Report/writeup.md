@@ -61,8 +61,8 @@ We experimented with many different custom rounding bins to improve accuracy and
 
 | Rounded Rating | Custom Bin Interval |
 |----------------|---------------------|
-| 1.0            | (-∞, 2.50)          |
-| 2.0            | [2.50, 2.85)        |
+| 1.0            | (-∞, 1.50)          |
+| 2.0            | [1.50, 2.85)        |
 | 3.0            | [2.85, 3.30)        |
 | 4.0            | [3.30, 4.05)        |
 | 5.0            | [4.05, ∞)           |
