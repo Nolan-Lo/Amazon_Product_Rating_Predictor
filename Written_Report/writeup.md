@@ -55,6 +55,26 @@ We began with a **linear regression model** as a baseline.
   - **Computationally cheap**, allowing for quick tuning of parameters
   - Simple and easy to interpret
 
+#### Experiments & Parameter Tuning
+
+We experimented with many different custom rounding bins to improve accuracy and help mitigate the class imbalance of the rounded predictions. 
+
+| Rounded Rating | Custom Bin Interval |
+|----------------|---------------------|
+| 1.0            | (-∞, 2.50)          |
+| 2.0            | [2.50, 2.85)        |
+| 3.0            | [2.85, 3.30)        |
+| 4.0            | [3.30, 4.05)        |
+| 5.0            | [4.05, ∞)           |
+
+| Rating | True Count | Predicted Count |
+|--------|------------|-----------------|
+| 1.0    | 138,758    | 136,333         |
+| 2.0    | 47,918     | 45,963          |
+| 3.0    | 83,963     | 87,322          |
+| 4.0    | 171,332    | 174,213         |
+| 5.0    | 214,629    | 212,769         |
+
 However it did not perform as well as we hoped. 
 
 - **Reasons for poor performance**:
