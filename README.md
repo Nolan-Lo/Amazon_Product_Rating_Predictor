@@ -38,23 +38,23 @@ We began by understanding the structure and distribution of our dataset, which c
 
 #### Null Values
 We observed **zero missing values** across all columns:
-![Nulls by columns](../images/nulls_by_col.png)
+![Nulls by columns](/images/nulls_by_col.png)
 
 
 #### Category Distribution
-![Nulls by columns](../images/category_distribution.png)
+![Nulls by columns](/images/category_distribution.png)
 
 This distribution shows that some categories are more prevelant in the dataset than others.
 
 
 #### Rating Distribution
-![Nulls by columns](../images/rating_distribution.png)
+![Nulls by columns](/images/rating_distribution.png)
 
 This distribution suggests a strong skew toward positive ratings.
 
 
 #### Text Length Summary
-![Nulls by columns](../images/text_length.png)
+![Nulls by columns](/images/text_length.png)
 
 This reveals high variability in review length, which could influence model predictions and require normalization or capping during preprocessing.
 
