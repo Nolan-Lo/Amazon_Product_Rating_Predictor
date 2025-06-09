@@ -9,10 +9,6 @@ We hope to gain a deeper understanding of consumer behavior, enabling businesses
 ### Link to Jupyter Notebook
 [Click here to see notebook](https://github.com/Nolan-Lo/Amazon_Product_Rating_Predictor/blob/Milestone4/Notebook/Amazon_Reviews_M4.ipynb)
 
-### Setup
-```bash
-!pip install pyspark findspark matplotlib seaborn pandas
-```
 ---
 
 ## Introduction
