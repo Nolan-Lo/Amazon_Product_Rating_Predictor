@@ -1,6 +1,6 @@
 # Amazon Rating Predictor
 
-##Introduction
+## Introduction
 
 In our initial data exploration to determine the focus of our project, we discovered a robust dataset developed by the McAuley Lab research team at UC San Diego that compiled amazon customer review data.   This dataset is incredibly expansive - it includes over 300 million reviews, a rich set of categorical features for each review observation, and no null values for any of the features in the dataset.  
 
