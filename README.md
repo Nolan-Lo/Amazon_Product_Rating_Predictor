@@ -33,7 +33,7 @@ We began by understanding the structure and distribution of our dataset, which c
 **Total Reviews**: `300,260,938`
 
 #### Schema Overview
-![Nulls by columns](../images/schema.png)
+![Nulls by columns](/images/schema.png)
 
 
 #### Null Values
