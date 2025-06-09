@@ -146,6 +146,14 @@ Hyperparameter tuning was manual. An automated grid or Bayesian searches could f
 Runtime limitations caused memory errors on larger subsets, highlighting the need for distributed training pipelines.
 
 
+## Conclusion
+What initially seemed like our dataset’s greatest feature turned out to be its most significant hurdle.  The sheer size of the dataset made it near impossible to train a model on anything more than a 10% subset, given our resource constraints.  
+
+Furthermore, from the onset we took an approach to create a generalized prediction model, when given the size of the dataset, we would easily have enough data to create models that were more accurate and designed specifically for a given category.  
+
+It is clear that if we focused our modelling efforts on specific categories, thereby subsetting the dataset into category relevant observations, we could speed up our ability to iterate and tune our hyperparameters.
+
+Ultimately our random forest classifier produced successful results as a generalized model that could be applied to the entire dataset, but given our feature rich dataset, we recognize that there is significant opportunity to increase prediction accuracy by focusing on specific product categories and tuning a model for particular segments.
 
 
 ## Statement of Collaboration
