@@ -161,11 +161,13 @@ Runtime limitations caused memory errors on larger subsets, highlighting the nee
 ## Conclusion
 What initially seemed like our dataset’s greatest feature turned out to be its most significant hurdle.  The sheer size of the dataset made it near impossible to train a model on anything more than a 10% subset, given our resource constraints.  
 
-Furthermore, from the onset we took an approach to create a generalized prediction model, when given the size of the dataset, we would easily have enough data to create models that were more accurate and designed specifically for a given category.  
+From the outset, we attempted to create a generalized prediction model. However, given the volume of data available, we now recognize that a more effective approach would involve building specialized models tailored to individual product categories. This would not only reduce dataset size per model, enabling faster iterations and hyperparameter tuning, but would also likely improve accuracy by capturing category-specific patterns. 
 
 It is clear that if we focused our modelling efforts on specific categories, thereby subsetting the dataset into category relevant observations, we could speed up our ability to iterate and tune our hyperparameters.
 
-Ultimately our random forest classifier produced successful results as a generalized model that could be applied to the entire dataset, but given our feature rich dataset, we recognize that there is significant opportunity to increase prediction accuracy by focusing on specific product categories and tuning a model for particular segments.
+Our final model was a Random Forest classifier trained on a 10% sample of the dataset, or approximately 30 million rows. This model achieved an accuracy of **65.59%**, which is a strong result considering we were predicting one of **six possible labels** (ratings from 0 through 5). 
+
+Ultimately, while our generalized model delivered reasonable predictive performance, the structure and richness of the dataset present a clear opportunity to boost performance by shifting toward category-specific modeling strategies.
 
 
 ## Statement of Collaboration
