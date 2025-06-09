@@ -47,7 +47,7 @@ This distribution suggests a strong skew toward positive ratings.
 
 This reveals high variability in review length, which could influence model predictions and require normalization or capping during preprocessing.
 
----
+
 
 ### 2. Preprocessing
 
@@ -63,7 +63,7 @@ Given the massive size of the dataset and performance constraints, we implemente
 - **Target Variable**:
   - Predicted `rating` as a regression task.
 
----
+
 
 ### 3. Model 1 – Linear Regression
 
@@ -100,7 +100,7 @@ However it did not perform as well as we hoped.
   - Unable to model nonlinear relationships between review characteristics and rating.
   - Product categories introduce heterogeneity, which the linear model couldn't adjust for effectively.
 
----
+
 
 ### 4. Model 2 – Random Forest
 
