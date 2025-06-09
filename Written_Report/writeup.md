@@ -47,7 +47,7 @@ This distribution suggests a strong skew toward positive ratings.
 
 This reveals high variability in review length, which could influence model predictions and require normalization or capping during preprocessing.
 
-
+---
 
 ### 2. Preprocessing
 
@@ -115,7 +115,7 @@ To better capture non-linear patterns and interactions in the data, we transitio
 
 We conducted several trials to assess the effect of sample size and model parameters on performance.
 
-##### Sample Size Experiments
+##### Sample Size Experiments and Results
 
 | Sample Size | Accuracy Impact | Processing Time Impact |
 |-------------|------------------|-------------------------|
