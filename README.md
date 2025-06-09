@@ -11,9 +11,8 @@ We hope to gain a deeper understanding of consumer behavior, enabling businesses
 
 ### Setup
 ```bash
-pip install -r requirements.txt
-# or see top of `exploration_spark.ipynb` for !pip commands
-
+!pip install pyspark findspark matplotlib seaborn pandas
+```
 ---
 
 ## Introduction
