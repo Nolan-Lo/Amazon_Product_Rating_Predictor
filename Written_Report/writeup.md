@@ -7,7 +7,7 @@
 
 
 
-## Methods
+## Methods and Results
 
 ### 1. Data Exploration
 
