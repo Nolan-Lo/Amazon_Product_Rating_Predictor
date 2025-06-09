@@ -6,7 +6,7 @@ In our initial data exploration to determine the focus of our project, we discov
 
 Given the opportunity to work with such a dataset, and our shared understanding of the proliferation of ecommerce and digital transactions, we decided to focus our efforts on predicting the star rating of Amazon reviews based on their features, such as review length, title, verified purchase status, and more.
 
-We agreed that the ability to predict online customer reviews would yield significant business impact for businesses that want to expand or focus their source of sales online.  An accurate model would enable business leaders to enhance their online storefronts, and anticipate headwinds given the competitive nature of some product categories or consumer segments.
+We agreed that the ability to predict online customer reviews would yield significant commercial impact for businesses that want to expand or focus their source of sales online.  An accurate model would enable business leaders to enhance their online storefronts, and anticipate headwinds given the competitive nature of some product categories or consumer segments.
 
 We believed the impressive quality and size of the dataset would give us a strong foundation to train our model.  
 
